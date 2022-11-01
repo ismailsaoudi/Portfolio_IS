@@ -5,10 +5,7 @@ import Particle from "../Particle";
 import pdf from "../Resume/Ismail-devops-engineer-resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-// import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-// const resume = "Ismail-devops-engineer-resume.pdf";
 
 function ResumeNew() {
   // const [width, setWidth] = useState(1200);
@@ -30,21 +27,19 @@ function ResumeNew() {
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}></Row>
         <Row className="resume">
-          {/* <Document
+          { <Document
             src="../Resume/Ismail-devops-engineer-resume.pdf"
             onLoadSuccess={onDocumentLoadSuccess}
-            className="d-flex justify-content-center"
-          >
+            className="d-flex justify-content-center">
             <Page hight="600" pageNumber={pageNumber} />
-          </Document> */}
+          </Document>}
         </Row>
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
+            style={{ maxWidth: "250px" }}>
             <AiOutlineDownload />
             &nbsp;Download Resume
           </Button>

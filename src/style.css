@@ -1,14 +1,14 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(248, 248, 248, 0.582),
-    rgba(38, 25, 41, 0.582)
+    rgba(5, 1, 71, 0.582),
+    rgba(0, 3, 194, 0.582)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(38, 25, 41, 0.582),
-    rgba(38, 25, 41, 0.582)
+    rgba(0, 0, 0, 0.582),
+    rgba(0, 0, 0, 0.582)
   );
 
   --imp-text-color: #c770f0;
@@ -32,7 +32,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: rgba(38, 25, 41, 0.582);
+  background-color: rgba(0, 3, 46, 0.582);
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,12 +57,12 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #ffffff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(8, 6, 122, 0.959);
   border-radius: 12px;
 }
 
@@ -97,7 +97,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #eee7f1 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 2px !important;
