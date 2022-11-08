@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../Resume/Ismail-devops-engineer-resume.pdf";
+import pdf from "../Resume/Ismail-resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 
@@ -28,7 +28,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}></Row>
         <Row className="resume">
           { <Document
-            src="../Resume/Ismail-devops-engineer-resume.pdf"
+            src="../Resume/Ismail-resume.pdf"
             onLoadSuccess={onDocumentLoadSuccess}
             className="d-flex justify-content-center">
             <Page hight="600" pageNumber={pageNumber} />
