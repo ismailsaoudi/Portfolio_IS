@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio_IS/static/css/main.c5eb3002.css",
-    "main.js": "/Portfolio_IS/static/js/main.93b8cdb9.js",
+    "main.css": "/Portfolio_IS/static/css/main.7c087d4e.css",
+    "main.js": "/Portfolio_IS/static/js/main.0950d755.js",
     "static/js/415.4d6acbeb.chunk.js": "/Portfolio_IS/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio_IS/static/js/787.1ed0c42c.chunk.js",
     "pdf.worker.js": "/Portfolio_IS/e7e915313973ba1d49f9bb2a1998626e.js",
     "static/media/home-main.svg": "/Portfolio_IS/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
     "static/media/about.png": "/Portfolio_IS/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/Ismail-resume.pdf": "/Portfolio_IS/static/media/Ismail-resume.f1559b458e58895bf4d2.pdf",
+    "static/media/Ismail-resume.pdf": "/Portfolio_IS/static/media/Ismail-resume.8ac7905ff6dcad344a58.pdf",
     "static/media/homepage.png": "/Portfolio_IS/static/media/homepage.69f9ae8b837247f8448a.png",
     "static/media/home-bg.jpg": "/Portfolio_IS/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/noteTaker.png": "/Portfolio_IS/static/media/noteTaker.2e1091b4c2e71dada782.png",
@@ -16,13 +16,13 @@
     "static/media/avatar.svg": "/Portfolio_IS/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "static/media/pre.svg": "/Portfolio_IS/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Portfolio_IS/index.html",
-    "main.c5eb3002.css.map": "/Portfolio_IS/static/css/main.c5eb3002.css.map",
-    "main.93b8cdb9.js.map": "/Portfolio_IS/static/js/main.93b8cdb9.js.map",
+    "main.7c087d4e.css.map": "/Portfolio_IS/static/css/main.7c087d4e.css.map",
+    "main.0950d755.js.map": "/Portfolio_IS/static/js/main.0950d755.js.map",
     "415.4d6acbeb.chunk.js.map": "/Portfolio_IS/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio_IS/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5eb3002.css",
-    "static/js/main.93b8cdb9.js"
+    "static/css/main.7c087d4e.css",
+    "static/js/main.0950d755.js"
   ]
 }
