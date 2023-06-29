@@ -123,11 +123,11 @@ button:focus {
   left: 12px !important;
   top: 10px !important;
   transform: rotate(135deg) !important;
-  opacity: 0.9 !important;
+  opacity: 1 !important;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
-  height: 5px !important;
+  height: 2px !important;
   visibility: hidden !important;
   background-color: transparent !important;
 }
@@ -142,9 +142,9 @@ button:focus {
 
 @media (max-width: 767px) {
   .navbar {
-    padding: 2px 12px !important;
+    padding: 1px 2px !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #293169 !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -645,14 +645,14 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid #442d4e;
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: #150f665d;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
