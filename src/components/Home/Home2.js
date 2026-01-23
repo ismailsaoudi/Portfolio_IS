@@ -14,41 +14,17 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 className="home-about-title">
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple">Javascript, HTML and CSS. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              I'm a technical leader with 14+ years of experience delivering enterprise-grade applications. I specialize in <b className="purple">Python, Node.js, Go (Golang), React, Angular, and TypeScript</b>.
+            </p>
+            <p className="home-about-body">
+              My expertise includes building <b className="purple">Cloud-Native Applications, Microservices, and REST APIs</b> on <b className="purple">Google Cloud Platform (GCP) with CI/CD, Docker, and Kubernetes</b>.
+            </p>
+            <p className="home-about-body">
+              I'm passionate about <b className="purple">Generative AI, Agentic AI, and Vertex AI</b>, taking ideas from concept through PoC to production. I also integrate enterprise systems including <b className="purple">SAP, MES, SCADA, and IoT platforms</b>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -66,7 +42,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/ismailsaoudi"
+                  href="https://github.com/ismasaoudi"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

@@ -7,13 +7,11 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Ismail Saoudi </span>
-            from <span className="purple"> Cincinnati, Ohio.</span>
-            <br />I am a junior Devops And Full Stack web Developer, and A senior Network Engineer. 
-            <br />
-            <br />
-            Apart from coding and computer Science, some other activities that I love to do!
+          <p className="about-card-text">
+            Hi Everyone, I am <span className="purple">Ismail Saoudi</span> from <span className="purple">United States</span>. I am a Lead IT Application Engineer and Emerging Technology Lead with 14+ years of experience delivering enterprise-grade, full-stack web applications. Specialized in taking ideas from concept through proof of concept (PoC) into secure, scalable, production-ready systems.
+          </p>
+          <p className="about-card-text">
+            Apart from coding and technology, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
@@ -27,7 +25,7 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p style={{ color: "#666666", fontStyle: "italic" }}>
             "DREAM... ACHIEVE!"{" "}
           </p>
           <footer className="blockquote-footer">IsmailS</footer>

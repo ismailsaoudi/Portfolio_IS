@@ -1,49 +1,95 @@
 import React, { useState } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
-import pdf from "../Resume/Ismail-resume.pdf";
-import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-
+import pdf from "../Resume/Ismail2027Resume.pdf";
+import { AiOutlineDownload, AiOutlineZoomIn, AiOutlineZoomOut } from "react-icons/ai";
 
 function ResumeNew() {
-  // const [width, setWidth] = useState(1200);
-  const [numPage, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [scale, setScale] = useState(1.0);
 
-  // useEffect(() => {
-  //   setWidth(window.innerWidth);
-  // }, []);
+  function zoomIn() {
+    setScale(prev => Math.min(prev + 0.1, 2.0));
+  }
 
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPage);
-    setPageNumber(1);
+  function zoomOut() {
+    setScale(prev => Math.max(prev - 0.1, 0.5));
   }
 
   return (
-    <div>
+    <div className="resume-wrapper">
       <Container fluid className="resume-section">
-        <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}></Row>
-        <Row className="resume">
-          { <Document
-            src="../Resume/Ismail-resume.pdf"
-            onLoadSuccess={onDocumentLoadSuccess}
-            className="d-flex justify-content-center">
-            <Page hight="600" pageNumber={pageNumber} />
-          </Document>}
-        </Row>
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}>
-            <AiOutlineDownload />
-            &nbsp;Download Resume
-          </Button>
-        </Row>
+        <Container>
+          <Row>
+            <Col>
+              <div className="resume-header">
+                <h1 className="resume-title">Resume</h1>
+                <p className="resume-subtitle">View or download my professional resume</p>
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="resume-controls-row">
+            <Col className="text-center">
+              <div className="resume-controls">
+                <Button
+                  variant="outline-dark"
+                  onClick={zoomOut}
+                  disabled={scale <= 0.5}
+                  className="resume-zoom-btn"
+                  title="Zoom Out"
+                >
+                  <AiOutlineZoomOut />
+                </Button>
+                <span className="resume-zoom-info">
+                  {Math.round(scale * 100)}%
+                </span>
+                <Button
+                  variant="outline-dark"
+                  onClick={zoomIn}
+                  disabled={scale >= 2.0}
+                  className="resume-zoom-btn"
+                  title="Zoom In"
+                >
+                  <AiOutlineZoomIn />
+                </Button>
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="resume-viewer-row">
+            <Col>
+              <div className="resume-viewer-container">
+                <object
+                  data={`${pdf}#zoom=${scale * 100}&toolbar=1&navpanes=1&scrollbar=1`}
+                  type="application/pdf"
+                  className="resume-pdf-viewer"
+                  title="Resume PDF"
+                >
+                  <p className="resume-fallback">
+                    Your browser does not support PDFs. 
+                    <a href={pdf} download="Ismail_Saoudi_Resume.pdf" className="resume-fallback-link">
+                      Click here to download the PDF
+                    </a>
+                  </p>
+                </object>
+              </div>
+            </Col>
+          </Row>
+
+          <Row className="resume-actions-row">
+            <Col className="text-center">
+              <Button
+                variant="primary"
+                href={pdf}
+                download="Ismail_Saoudi_Resume.pdf"
+                className="resume-download-btn"
+              >
+                <AiOutlineDownload />
+                &nbsp;Download Resume PDF
+              </Button>
+            </Col>
+          </Row>
+        </Container>
       </Container>
     </div>
   );

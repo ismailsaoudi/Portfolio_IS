@@ -23,7 +23,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://github.com/ismailsaoudi"
-                style={{ color: "white" }}
+                style={{ color: "#000000" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -34,7 +34,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/ismail-saoudi/"
-                style={{ color: "white" }}
+                style={{ color: "#000000" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -44,7 +44,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.instagram.com/isma_saoudi/"
-                style={{ color: "white" }}
+                style={{ color: "#000000" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
