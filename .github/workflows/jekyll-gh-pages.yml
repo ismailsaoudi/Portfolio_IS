@@ -1,7 +1,7 @@
   - name: Setup Ruby
     uses: ruby/setup-ruby@v1
     with:
-      ruby-version: '3.1'  # adjust if needed
+      ruby-version: '3.1'
 
   - name: Install dependencies
     run: |
@@ -16,3 +16,4 @@
     with:
       github_token: ${{ secrets.GITHUB_TOKEN }}
       publish_dir: ./_site
+          
